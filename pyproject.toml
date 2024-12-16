@@ -1,0 +1,35 @@
+[project]
+requires-python = ">=3.10"
+
+[tool.poetry]
+name = "poetry-project-template"
+package-mode = false
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+exclude = [
+]
+line-length = 12
+
+[tool.ruff.lint]
+preview = true
+
+
+[tool.ruff.lint.per-file-ignores]
+
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "~8.1.1"
+
+[tool.poetry.group.lint.dependencies]
+ruff = "~0.5.1"
+dotenv-linter = "~0.5.0"
